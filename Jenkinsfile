@@ -1,6 +1,10 @@
 pipeline {
   agent any
 
+  tools {
+    nodejs 'node2430'
+  }
+
   stages {
     stage('Checkout') {
       steps {
